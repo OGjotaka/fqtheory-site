@@ -1,74 +1,95 @@
-/* style.css for fqtheory.com */
-
+/* Base Styling */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fdfdfd;
-  color: #111;
-  line-height: 1.6;
+  background: linear-gradient(to bottom, #fff700, #ff8c00, #9932cc, #000);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 1.5rem;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
-  letter-spacing: 0.05rem;
+  font-size: 2.5rem;
+  color: #fff700;
+  text-shadow: 2px 2px #000;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 nav a {
+  color: #ffdd57;
   text-decoration: none;
-  color: #0077cc;
-  font-weight: 500;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ff8c00;
 }
 
 main {
+  flex: 1;
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.intro, .learn-more, .contact {
+section {
   margin-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 h2 {
-  font-size: 1.5rem;
+  color: #ffdd57;
+  border-bottom: 2px solid #9932cc;
+  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
 
+footer {
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
 a {
-  color: #0077cc;
+  color: #ffdd57;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ff8c00;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #e0e0e0;
-  background-color: #f9f9f9;
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
 }
