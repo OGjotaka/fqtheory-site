@@ -30,6 +30,31 @@ nav ul {
   gap: 1.5rem;
   margin-top: 1rem;
 }
+.donate {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.donate-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #fff700, #ff8c00, #9932cc);
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.donate-button:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
 
 nav a {
   color: #ffdd57;
